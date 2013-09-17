@@ -1,0 +1,2 @@
+{"ts":1379186221011,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1379186224046,"patch":[[{"diffs":[[1,"net stop spooler\ncd C:\\WINDOWS\\SYSTEM32\\SPOOL\\PRINTERS\\\ndel . /Q\nnet start spooler"]],"start1":0,"start2":0,"length1":0,"length2":82}]],"length":82,"saved":false}

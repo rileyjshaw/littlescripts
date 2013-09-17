@@ -1,0 +1,2 @@
+{"ts":1379186280583,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1379186320208,"patch":[[{"diffs":[[1,"set muteState to (get (output muted of (get volume settings)))\rset currentVolume to output volume of (get volume settings)\r\rif muteState is true then\r\tset volume output volume (currentVolume - 100 / 16) with output muted\relse\r\tset volume output volume (currentVolume - 100 / 16)\rend if"]],"start1":0,"start2":0,"length1":0,"length2":285}]],"length":285,"saved":false}

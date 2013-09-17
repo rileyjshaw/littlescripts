@@ -1,0 +1,1 @@
+set muteState to (get (output muted of (get volume settings)))set currentVolume to output volume of (get volume settings)if muteState is true then	set volume output volume (currentVolume - 100 / 16) with output mutedelse	set volume output volume (currentVolume - 100 / 16)end if
