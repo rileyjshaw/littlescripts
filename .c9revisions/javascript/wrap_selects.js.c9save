@@ -1,3 +1,0 @@
-{"ts":1379186012495,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
-{"contributors":[],"silentsave":false,"ts":1379186058496,"patch":[[{"diffs":[[1,"// inefficient but way easier to read\n\nvar wrapSelects = function() {\n  $('select:not(.select-wrapper select)').wrap(function() {\n    return '<div class=\"select-wrapper\" style=\"width:' + $(this).css('width') + '; height:' + $(this).css('height') + ' \" />';\n  }).width('150%').after('<div class=\"right-border-fix\"></div>');\n}"]],"start1":0,"start2":0,"length1":0,"length2":324}]],"length":324,"saved":false}
-{"ts":1379186237827,"patch":[[{"diffs":[[-1,"// inefficient but way easier to read\n\n"],[0,"var "]],"start1":0,"start2":0,"length1":43,"length2":4}]],"length":285,"saved":false}
