@@ -13,6 +13,11 @@ Ah, Windows printers. This script clears and resets your spooler, which kicks th
 ##javascript
 ###wrap_selects
 Places <select> elements on the page into wrappers, which is a good first step for styling them. I can't *wait* until we can do away with this once & for all, but for now it's still a necessary evil.
+###sticky_footer (in multi-page PDF)
+While using [wkhtmltopdf-0.11.0-rc1 osx](https://code.google.com/p/wkhtmltopdf/) to convert HTML -> PDF, I needed a way to stick some text at the very bottom of the last page, regardless of main content length. This ugly beast should do the trick (example project included).
+```bash
+./wkhtmltopdf --footer-html /wherever/footer.html --footer-spacing -5.5 /wherever/main.html /wherever/thisgetsprinted.pdf
+```
 
 ##python
 ###random_english_word
