@@ -7,6 +7,8 @@ A bunch of unrelated scripts that are too tiny to merit their own repository.
 Some moron at Apple decided that pressing the volume down key on a Mac should unmute it. This script makes it a little better by immediately re-muting your Mac.
 
 ##batch
+###compile_run_java.bat
+Allows you to compile / run Java code without installing a clunky IDE. Lots of frilly bits on this one; it was more of an exploration of batch than a pure utility script.
 ###printer_reset.bat
 Ah, Windows printers. This script clears and resets your spooler, which kicks the ass of any jobs stuck in the queue. Voted as Mom's Favorite, 2008.
 
