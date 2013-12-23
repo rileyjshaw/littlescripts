@@ -1,0 +1,66 @@
+@ECHO OFF
+mode 120
+
+:AUTORUN
+cls
+cd C:\Prog\BAT
+color f1
+call AutoRunner.bat > ConsoleOutput.txt
+color 1f
+cls
+echo File has been saved to ConsoleOutput.txt
+echo.
+echo.
+
+:SHOWOUTPUT
+Title Prompt
+echo Would you like to display the console output now? (y/n)
+set /p Rcho=
+set Rcho=%Rcho:~0,1%
+if "%Rcho%"=="y" goto READOUTPUT
+if "%Rcho%"=="n" goto SKIPOUTPUT
+echo invalid choice
+goto SHOWOUTPUT
+
+:READOUTPUT
+Title Previous Console Output
+cls
+cd C:\Prog\BAT\
+more ConsoleOutput.txt
+pause
+goto RUNAGAIN
+
+:SKIPOUTPUT
+cls
+goto RUNAGAIN
+
+:RUNAGAIN
+Title Prompt
+cls
+echo Would you like to run another file? (y/n)
+set /p Chooz=
+set Chooz=%Chooz:~0,1%
+if "%Chooz%"=="y" goto ANOTHERGO
+if "%Chooz%"=="n" goto CLOSE
+echo invalid choice
+pause
+goto RUNAGAIN
+
+:ANOTHERGO
+cls && color 4F
+echo WARNING: Previous "ConsoleOutput.txt" file will be overwritten.
+echo Are you sure you want to continue? (y/n)
+set /p cont=
+set cont=%cont:~0,1%
+if "%cont%"=="y" goto AUTORUN
+if "%cont%"=="n" goto CLOSE
+echo invalid choice
+pause
+goto ANOTHERGO
+
+:CLOSE
+cls
+Title By rileyjshaw
+echo Goodbye. Press any key to close.
+pause > nul
+Exit
