@@ -11,6 +11,8 @@ Some moron at Apple decided that pressing the volume down key on a Mac should un
 Allows you to compile / run Java code without installing a clunky IDE. Lots of frilly bits on this one; it was more of an exploration of batch than a pure utility script.
 ###printer_reset.bat
 Ah, Windows printers. This script clears and resets your spooler, which kicks the ass of any jobs stuck in the queue. Voted as Mom's Favorite, 2008.
+###ie_prank.bat
+In an attempt to convince my housemate to move off of Internet Explorer 7, I pointed all of his IE shortcuts to this script. It switches your right and left mouse buttons before launching IE. Muhahah.
 
 ##javascript
 ###wrap_selects
